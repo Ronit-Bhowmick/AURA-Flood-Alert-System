@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall Alert System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/rain_alert.css') }}">
+</head>
+
+<body>
+
+    <ul class="nav justify-content-center">
+        <li class="nav-item"> <a class="nav-link active" href="{{ url_for('index') }}">Home</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="{{ url_for('about') }}">About</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="{{ url_for('rain_alert') }}">Rain Meter</a> </li>
+        <li class="nav-item"> <a class="nav-link" href="{{ url_for('flood_safety_tips') }}">Flood Safety Tips</a> </li>
+    </ul>
+
+    <!-- Form Section -->
+    <div class="container mt-5">
+        <h2 class="text-center mb-4">Enter Your Location</h2>
+        <form id="location-form">
+            <div class="form-group">
+                <label for="latitude">Latitude</label>
+                <input type="text" class="form-control" id="latitude" placeholder="Enter latitude">
+            </div>
+            <div class="form-group">
+                <label for="longitude">Longitude</label>
+                <input type="text" class="form-control" id="longitude" placeholder="Enter longitude">
+            </div>
+            <button type="submit" class="btn btn-primary mt-3">Submit</button>
+        </form>
+        <div id="message" class="mt-3"></div> <!-- Added message div -->
+    </div>
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <h1 class="display-4 mb-4">Rainfall Alert System</h1>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h2 class="card-title">Current Rainfall Amount:
+                            <span id="rainfall">0</span> mm
+                        </h2>
+                    </div>
+                </div>
+                <div id="alert" class="alert alert-danger mt-3" style="display: none;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="/static/js/script2.js"></script>
+</body>
+
+</html>

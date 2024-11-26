@@ -1,0 +1,30 @@
+body {
+    background-color: #f8f9fa;
+    color: #343a40;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    color: #007bff;
+}
+
+.section-title {
+    color: #495057;
+}
+
+.list-group-item {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    color: #343a40;
+}
+
+footer {
+    margin-top: 4rem;
+    padding: 1rem 0;
+    background-color: #ffffff;
+    border-top: 1px solid #dee2e6;
+}

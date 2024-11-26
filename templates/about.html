@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Flood Alert System</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <ul class="nav justify-content-center bg-light py-3 mb-5">
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link active" href="{{ url_for('about') }}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('rain_alert') }}">Rain Meter</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('flood_safety_tips') }}">Flood Safety Tips</a>
+    </li>
+  </ul>
+
+  <!-- About Section -->
+  <div class="container text-center my-5">
+    <h1 class="display-4">About Flood Alert System</h1>
+    <p class="lead">Developed by Tech Artisans</p>
+  </div>
+
+  <!-- Description Section -->
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="text-justify">
+          The Flood Alert System for local communities is an innovative solution developed by Tech Artisans to enhance
+          safety and preparedness during flood situations. Our system provides real-time weather updates, alerts on
+          potential flood risks, and essential safety tips to help communities stay informed and take proactive
+          measures to protect themselves and their properties.
+        </p>
+        <p class="text-justify">
+          At Tech Artisans, we are committed to leveraging technology to create impactful solutions that address real-world
+          challenges. The Flood Alert System is designed to be user-friendly and accessible to everyone, ensuring that
+          critical information is just a click away.
+        </p>
+        <p class="text-justify">
+          Our team of experts continuously works to improve and update the system to provide the most accurate and
+          timely information. Join our community and stay safe with the Flood Alert System.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light mt-5">
+    <p class="mb-0">© 2024 Tech Artisans. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

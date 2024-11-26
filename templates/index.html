@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+  <!-- Navigation Bar -->
+  <ul class="nav justify-content-center bg-light py-3 mb-5">
+    <li class="nav-item">
+      <a class="nav-link active" href="#">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('about') }}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('rain_alert') }}">Rain Meter</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{{ url_for('flood_safety_tips') }}">Flood Safety Tips</a>
+    </li>
+  </ul>
+
+  <!-- Welcome Section -->
+  <div class="container text-center my-5">
+    <h1 class="display-4">Welcome to Our Safety Portal</h1>
+    <p class="lead">Your go-to place for real-time weather updates, safety tips, and emergency alerts.</p>
+  </div>
+
+  <!-- Feature Highlights -->
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Real-Time Alerts</h5>
+            <p class="card-text">Stay updated with the latest weather alerts and safety information.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Emergency Tips</h5>
+            <p class="card-text">Get prepared with our comprehensive safety guides and tips.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card mb-4 shadow-sm">
+          <div class="card-body">
+            <h5 class="card-title">Community Support</h5>
+            <p class="card-text">Join our community and help each other during emergencies.</p>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-light mt-5">
+    <p class="mb-0">© 2024 Tech Artisans. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
